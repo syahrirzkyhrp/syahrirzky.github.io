@@ -1,0 +1,85 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+
+<img src="imagesop121.png" width=100%>
+
+<div class="w3-bar w3-black">
+ <button class="w3-bar-item w3-button" onclick="openGame('RPG')">RPG</button>
+ <button class="w3-bar-item w3-button" onclick="openGame('BattleRoyale')">Battle Royale</button>
+ <button class="w3-bar-item w3-button" onclick="openGame('MOBA')">MOBA</button>
+ <button class="w3-bar-item w3-button" onclick="openGame('Fighting')">Fighting</button>
+ <button class="w3-bar-item w3-button" onclick="openGame('Profile')">Profile</button>
+</div>
+<div id="Home" class="w3-container game w3-animate-zoom" style="">
+ <h2>SEPUTAR GAME</h2>
+ <img src ="imgsop3.png" width=50%><p>Seperti yang kita ketahui sekarang adalah zaman yang modern.
+ Game merupakan sarana hiburan yang paling disukai oleh orang orang, baik anak anak, remaja, dewasa 
+ maupun yang tua sekalipun senang bermain game. Game juga memiliki banyak jenis, berikut ini adalah 
+ macam macam genre dari game yang sedang populer saat ini.</p>
+ </div>
+<div id="RPG" class="w3-container game w3-animate-zoom" style="display:none">
+ <h2>RPG</h2>
+ <img src ="imgsop1.jpeg" width=30%>
+ <p>Apa itu RPG? RPG adalah singkatan dari role-playing game, yang merupakan 
+ salah satu jenis genre game terkenal. Ada banyak contoh-contoh game RPG populer
+ dari berbagai masa, mulai dari Final Fantasy, Pokemon, Dragon Quest, Diablo, 
+ Elder Scrolls, Undertale, hingga The Witcher. Tentu tiap game RPG memiliki keunggulan masing-masing.</p>
+</div>
+<div id="BattleRoyale" class="w3-container game w3-animate-bottom" style="display:none">
+ <h2>BattleRoyale</h2>
+ <img src="imgsop2.jpg" width= 30%>
+ <p> Game PUBG ataupun Fortnite dan yang terbaru adalah pada game
+ papan atas seperti Battlefield V dan Call of Duty, bukanlah salah 
+ satu yang pertama menggunakan genre Battle Royale ini.Beberapa tahun
+ yang lalu, game zombie-survival multiplayer seperti DayZ, H1Z1, dan 
+ Rust sudah mempopulerkan konsep Battle Royale ini dimana pemain akan 
+ ditempatkan secara acak di area yang rawan, dan harus bertahan hidup 
+ menggunakan apa pun yang mereka dapatkan sepanjang permainan.</p>
+</div>
+<div id="MOBA" class="w3-container game w3-animate-top" style="display:none">
+ <h2>MOBA(Multiplayer Online Battle Arena)</h2>
+ <img src="imgsop4.jpg" width=30%>
+ <p>Dota 2, League of Legend, Heroes of Storm, Arena of Valor, dan Mobile Legend, 
+ kita sudah merasa tidak asing dengan nama dari game tersebut. Yaps, game-game 
+ tersebut adalah game yang bertipe MOBA yang sekarang sedang ramai dimainkan di 
+ berbagai negara. Tapi apakah kalian tahu arti MOBA? MOBA adalah singkatan dari 
+ Multiplayer Online Battle Arena Yang artinya MOBA merupakan sebuah game multiplayer 
+ online yang bertema pertarungan di dalam arena.Pada umumnya game MOBA adalah game yang
+ memiliki sistem pertarungan 5 vs 5, dan kerjasama dalam tim sangatlah penting dalam game ini.
+ Dalam game MOBA terdapat role dan skill yang berbeda-beda, ada yang fokus ke serangan seperti: 
+ assassin, fighter (jarak dekat) dan marksman (jarak jauh), ada yang fokus terhadap pertahanan 
+ seperti: tanker, ada yang fokus terhadap bantuan yaitu support dan ada juga yang rolenya 
+ digabung misalnya karakter Pyke dalam game League Of Legend yang memiliki role assassin-support, 
+ dan lain sebagainya. 
+</p>
+</div>
+<div id="Fighting" class="w3-container game w3-animate-zoom" style="display:none">
+ <h2>Fighting</h2>
+ <img src = "imgsop5.jpg" width=30%>
+<p>Fighting adalah genre game bertarung. Seperti dalam arcade, pemain dapat mengeluarkan jurus-jurus 
+ampuh dalam pertarungannya. Genre fighting biasanya one on one dalam sebuah arena yang sempit.
+Contoh game bergenre Fighting Game adalah Street Fighter, King of Fighter, Mortal Kombat, Injustice 
+dan masih banyak lagi.
+</div>
+<div id="Profile" class="w3-container game w3-animate-top" style="display:none">
+ <h2>Profil Saya</h2>
+ <img src ="imgsopop.jpg" width=30%>
+ <p>NIM	: 10121100</p>
+ <p>Nama: Syahri Rizky Ramadhan Harahap</p>
+ <p>Kelas: IF-3 </p>
+ </div>
+<script>
+function openGame(Home) {
+ var i;
+ var x = document.getElementsByClassName("game");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(Home).style.display = "block";
+}
+</script>
+</body>
+</html>
